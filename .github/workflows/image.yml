@@ -1,8 +1,8 @@
 name : Build and Push Docker Image
 
 env:
-  REGISTRY : ghcr . io
-  IMAGE_NAME : ghcr . io / < your_lowercase_username >/ k8s - custom - nginx
+  REGISTRY : ghcr.io
+  IMAGE_NAME : ghcr.io/pansocrates03/ k8s - custom - nginx
 
 permissions :
   contents : read
@@ -10,9 +10,9 @@ permissions :
 
 on:
   push :
-      branches : [ " main " ]
+      branches : ["main"]
   pull_request :
-      branches : [ " main " ]
+      branches : ["main"]
   workflow_dispatch :
 
 jobs :
